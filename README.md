@@ -14,7 +14,7 @@ O **Grupo Work Security** é uma empresa com 10 anos de experiência no mercado,
 - **PHP** - Utilizado para o processamento do formulário de contato (`contact.php`).
 
 ## 📁 Estrutura de Arquivos
-Os arquivos do site estão localizados no diretório `www/`:
+Os arquivos do site estão localizados no diretório `/`:
 
 - `index.html`: Estrutura principal da página única.
 - `css/`: Folhas de estilo customizadas (`style.css`).
@@ -30,7 +30,7 @@ Para que o formulário de contato funcione corretamente, você deve servir o pro
 
 ```bash
 # Execute este comando na raiz do projeto
-php -S localhost:8000 -t www
+php -S localhost:8000 -t 
 ```
 Acesse: `http://localhost:8000`
 
@@ -45,8 +45,8 @@ python3 -m http.server 8000 --directory www
 ## ⚠️ Notas de Desenvolvimento
 O arquivo `index.html` está configurado para carregar os arquivos CSS e JS da pasta `min/` (versões combinadas e minificadas). 
 
-Se você fizer alterações em `www/css/style.css` ou `www/js/init.js`, você precisará:
-1. Atualizar os arquivos minificados em `www/min/`.
+Se você fizer alterações em `css/style.css` ou `js/init.js`, você precisará:
+1. Atualizar os arquivos minificados em `min/`.
 2. **OU** Alterar as tags `<link>` e `<script>` no `index.html` para apontar diretamente para os arquivos de origem durante o desenvolvimento.
 
 ---
